@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_channel_item"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="6dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:minHeight="100dp"
+    android:clickable="true">
+
+    <!--<TextView-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:id="@+id/title"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_toRightOf="@+id/picture"-->
+    <!--android:text="CCTV-1"-->
+    <!--android:textColor="#ee000000"-->
+    <!--android:textSize="16sp" />-->
+    <ImageView
+        android:layout_marginRight="8dp"
+        android:id="@+id/picture"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:scaleType="fitXY"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:layout_alignBottom="@+id/picture"
+        android:layout_marginBottom="18dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="#99000000"
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_toRightOf="@+id/picture"
+        android:text="10.13 9:00-19:00"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:ellipsize="end"
+        android:text="国宝档案，走进中国的美丽秘密"
+        android:textSize="15sp"
+        android:layout_toRightOf="@id/picture" />
+
+</RelativeLayout>

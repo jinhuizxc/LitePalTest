@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.jh.litepaltest">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!--android:name="org.litepal.LitePalApplication"-->
+    <application
+        android:name=".BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.SaveSampleActivity"
+            android:label="@string/save_sample"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.UpdateSampleActivity"
+            android:label="@string/update_sample"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.DeleteSampleActivity"
+            android:label="@string/delete_sample"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.QuerySampleActivity"
+            android:label="@string/query_sample"
+            android:screenOrientation="portrait" >
+        </activity>
+
+    </application>
+
+</manifest>
